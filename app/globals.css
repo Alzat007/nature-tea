@@ -1,0 +1,49 @@
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/400-italic.css';
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+@import '../styles/base.css';
+@import '../styles/experience.css';
+@custom-variant dark (&:is(.dark *));
+:root,
+.dark {
+  --background: #10130f;
+  --foreground: #eeeee4;
+  --card: #1b2019;
+  --card-foreground: #eeeee4;
+  --popover: #1b2019;
+  --popover-foreground: #eeeee4;
+  --primary: #cbd2ab;
+  --primary-foreground: #10130f;
+  --secondary: #242b20;
+  --secondary-foreground: #eeeee4;
+  --muted: #25291f;
+  --muted-foreground: #a6aa9a;
+  --accent: #cbd2ab;
+  --accent-foreground: #10130f;
+  --border: #ffffff24;
+  --input: #ffffff24;
+  --ring: #cbd2ab;
+  --radius: 0rem;
+  --destructive: #b96345;
+  --font-sans: 'Manrope', Arial, sans-serif;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: 'Manrope', Arial, sans-serif;
+}
