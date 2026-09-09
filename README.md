@@ -65,3 +65,16 @@ React Compiler 未启用；R3F 与 GSAP 使用可变对象驱动每帧动画，�
 - WebMCP 正常参数执行及缺失/错误参数拒绝。
 
 无账户、支付、订单或真实商品库存功能。
+
+## Cloudflare 自动部署
+
+正式网址为 https://nature-tea.pages.dev/，对应 GitHub 仓库 Alzat007/nature-tea。
+`.github/workflows/cloudflare-pages.yml` 会在推送 main 时安装锁定依赖、检查代码、构建静态网站、部署到既有 Cloudflare Pages 项目，并检查首页、JS/CSS、杯体 GLB、Draco 和字体是否可访问。
+
+一次性配置：
+
+1. 仓库 Actions 变量 `CLOUDFLARE_ACCOUNT_ID` 填写现有 Cloudflare 账户 ID。
+2. 仓库 Actions 密钥 `CLOUDFLARE_API_TOKEN` 填写仅限该账户的 `Account / Cloudflare Pages / Edit` 令牌。
+3. 在 GitHub Actions 中手动执行或重新运行部署。不要把令牌写进源码或普通变量。
+
+现有项目采用 Direct Upload，使用 Actions + Wrangler 可以保留原网址。GitHub Pages 也可托管此静态导出，但仓库子路径部署需要同时处理 Next.js basePath 与 GLB、Draco、字体的资源前缀，当前生产配置使用 Cloudflare 根路径。
