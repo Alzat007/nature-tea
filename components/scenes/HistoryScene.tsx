@@ -16,18 +16,18 @@ export default function HistoryScene({
         className={`history-stage pinned-stage ${finale ? 'is-finale' : ''}`}
       >
         <div className="section-marker">
-          <span>06</span> {t('A LEAF THROUGH TIME')}
+          <span>06</span> {t('A LIVING CRAFT THROUGH TIME')}
         </div>
         <div
           className={`history-intro ${active === 0 && !finale ? 'active' : ''}`}
         >
           <p className="eyebrow">
-            {t('THOUSANDS OF MOMENTS. ONE CONTINUOUS STORY.')}
+            {t('NINE CENTURIES. MANY HANDS. ONE LIVING TRADITION.')}
           </p>
           <h2>
-            {t('Time flows.')}
+            {t('Time carries it.')}
             <br />
-            <em>{t('The leaf remembers.')}</em>
+            <em>{t('Each generation keeps it alive.')}</em>
           </h2>
         </div>
         <div className={`milestone-wrap ${finale ? 'is-hidden' : ''}`}>
@@ -37,10 +37,7 @@ export default function HistoryScene({
               key={t(m.year)}
               aria-hidden={active !== i}
             >
-              <div className="milestone-year">
-                {t(m.year)}
-                <small>{i === 0 ? t('CE') : i === 1 ? '— 1000' : ''}</small>
-              </div>
+              <div className="milestone-year">{t(m.year)}</div>
               <p className="eyebrow">
                 {t('CHAPTER')} 0{i + 1}
               </p>
@@ -64,13 +61,15 @@ export default function HistoryScene({
           className={`history-finale ${finale ? 'active' : ''}`}
           aria-hidden={!finale}
         >
-          <p className="eyebrow">自然宇宙</p>
+          <p className="eyebrow">{t('UYGHUR MEDICINAL TEA')}</p>
           <h2>
-            {t('TIME MADE')}
+            {t('KNOWLEDGE')}
             <br />
-            <em>{t('VISIBLE.')}</em>
+            <em>{t('KEPT ALIVE.')}</em>
           </h2>
-          <p>{t('A little nature. A little time. A little more you.')}</p>
+          <p>
+            {t('A cup of plants. A culture of care. A tradition still shared.')}
+          </p>
           <a href="#home" className="line-button" tabIndex={finale ? 0 : -1}>
             {t('BEGIN AGAIN')} <span>↗</span>
           </a>

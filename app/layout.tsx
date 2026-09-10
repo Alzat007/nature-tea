@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'NATURE — A cup shaped by time',
+  title: 'NATURE · 维吾尔药茶 | Uyghur Medicinal Tea',
   description:
-    '自然宇宙。An exploration of tea, time and the objects we choose to keep.',
+    '走近维吾尔医药（和田药茶制作技艺）：约九百年历史、三十余种药食同源植物与活在日常里的非遗传承。',
 };
 export default function RootLayout({
   children,

@@ -31,7 +31,7 @@ export default function WebMCP({
     const tools: Tool[] = [
       {
         name: 'set_vessel_open',
-        description: 'Open or close the visible tea vessel.',
+        description: 'Open or close the visible Hotan medicinal tea vessel.',
         inputSchema: {
           type: 'object',
           properties: { open: { type: 'boolean' } },
@@ -51,7 +51,7 @@ export default function WebMCP({
       {
         name: 'explore_tea_product',
         description:
-          'Open the fullscreen detail view for a product in the collection.',
+          'Open the fullscreen detail view for a medicinal tea formula.',
         inputSchema: {
           type: 'object',
           properties: {
@@ -72,7 +72,8 @@ export default function WebMCP({
       },
       {
         name: 'navigate_tea_chapter',
-        description: 'Move to a named chapter of the tea experience.',
+        description:
+          'Move to a named chapter of the Hotan medicinal tea story.',
         inputSchema: {
           type: 'object',
           properties: { chapter: { type: 'string', enum: chapterIds } },

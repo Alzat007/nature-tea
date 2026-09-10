@@ -58,23 +58,23 @@ export default function ProductScene({
         }
       >
         <div className="section-marker">
-          <span>05</span> {t('THE STUDY COLLECTION')}
+          <span>05</span> {t('SEASONAL FORMULAS')}
         </div>
         <div className="collection-heading">
           <h2>
-            {t('Find your')}
+            {t('Choose a season.')}
             <br />
-            <em>{t('own nature.')}</em>
+            <em>{t('Meet a different cup.')}</em>
           </h2>
           <p>
-            {t('Three expressions.')}
+            {t('Three traditional directions.')}
             <br />
-            {t('One considered ritual.')}
+            {t('Each formula is adjusted with care.')}
           </p>
         </div>
         <div
           className="gallery-canvas"
-          aria-label={t('Interactive three-dimensional product collection')}
+          aria-label={t('Interactive three-dimensional formula collection')}
         >
           {seen && (
             <CanvasBoundary>
@@ -110,6 +110,9 @@ export default function ProductScene({
             </button>
           ))}
         </div>
+        <p className="collection-disclaimer">
+          {t('Traditional formula examples only; not medical advice.')}
+        </p>
       </section>
       <Dialog
         open={selected !== null}
@@ -140,7 +143,7 @@ export default function ProductScene({
               </div>
               <div className="detail-copy">
                 <p className="eyebrow">
-                  {t('THE STUDY COLLECTION')} / {t(selected.category)}
+                  {t('SEASONAL FORMULAS')} / {t(selected.category)}
                 </p>
                 <DialogTitle className="detail-title">
                   {t(selected.name)}
@@ -157,14 +160,14 @@ export default function ProductScene({
                     <dd>{t(selected.origin)}</dd>
                   </div>
                   <div>
-                    <dt>{t('CHARACTER')}</dt>
+                    <dt>{t('PROFILE')}</dt>
                     <dd>{t(selected.notes)}</dd>
                   </div>
                 </dl>
-                <p className="eyebrow">{t('YOUR DAILY RITUAL')}</p>
+                <p className="eyebrow">{t('BREWING GUIDE')}</p>
                 <p className="body-copy">{t(selected.ritual)}</p>
                 <DialogClose className="line-button">
-                  {t('BACK TO THE COLLECTION')} <span>↗</span>
+                  {t('BACK TO FORMULAS')} <span>↗</span>
                 </DialogClose>
               </div>
             </>

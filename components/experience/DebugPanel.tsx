@@ -20,7 +20,7 @@ export default function DebugPanel({
   return (
     <Leva
       collapsed
-      titleBar={{ title: 'NATURE / Art direction', drag: true, filter: false }}
+      titleBar={{ title: 'NATURE / Hotan tea', drag: true, filter: false }}
     />
   );
 }

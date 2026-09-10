@@ -105,7 +105,7 @@ export default function Experience() {
       <div
         className="world"
         aria-label={t(
-          'Interactive metallic tea cup. Use the Open button or click its lid.',
+          'Interactive metallic tea vessel. Use the Open button or click its lid.',
         )}
       >
         <CanvasBoundary>
@@ -122,15 +122,15 @@ export default function Experience() {
         <a
           className="wordmark"
           href="#home"
-          aria-label={t('NATURE, return to beginning')}
+          aria-label={t('NATURE Uyghur Medicinal Tea, return to beginning')}
         >
-          NATURE<span>自然宇宙</span>
+          NATURE<span>{t('UYGHUR MEDICINAL TEA')}</span>
         </a>
         <nav aria-label={t('Main navigation')}>
-          <a href="#ritual">{t('THE RITUAL')}</a>
-          <a href="#collection">{t('COLLECTION')}</a>
+          <a href="#ritual">{t('TEA & HOSPITALITY')}</a>
+          <a href="#collection">{t('FORMULAS')}</a>
           <a href="#history">
-            {t('OUR STORY')} <span>↗</span>
+            {t('HERITAGE')} <span>↗</span>
           </a>
         </nav>
       </header>
@@ -163,12 +163,12 @@ export default function Experience() {
       </main>
       <footer className="site-footer">
         <a href="#home" className="wordmark">
-          NATURE<span>自然宇宙</span>
+          NATURE<span>{t('UYGHUR MEDICINAL TEA')}</span>
         </a>
         <p>
-          {t('AN EXPLORATION OF TEA, TIME & FORM.')}
+          {t('AN EXPLORATION OF UYGHUR MEDICINAL TEA, CRAFT & CULTURE.')}
           <br />
-          <span>{t('Concept collection / 2026')}</span>
+          <span>{t('Cultural introduction / 2026')}</span>
         </p>
         <button onClick={() => setPaused((v) => !v)} aria-pressed={paused}>
           {paused ? t('RESUME MOTION') : t('PAUSE MOTION')}{' '}

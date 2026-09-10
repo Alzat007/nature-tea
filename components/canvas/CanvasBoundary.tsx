@@ -11,11 +11,11 @@ export default class CanvasBoundary extends Component<
   render() {
     return this.state.error ? (
       <output className="canvas-fallback">
-        <p>THE NATURE VESSEL</p>
+        <p>HOTAN MEDICINAL TEA · 和田药茶</p>
         <small>
           3D is unavailable in this browser.
           <br />
-          Explore the tea through the story below.
+          The full bilingual story remains available below.
         </small>
       </output>
     ) : (

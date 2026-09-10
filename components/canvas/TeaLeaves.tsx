@@ -18,7 +18,20 @@ export default function TeaLeaves({
   const geom = useMemo(createLeafGeometry, []);
   const dummy = useMemo(() => new THREE.Object3D(), []);
   const count = mobile ? 24 : 52;
+  const palette = useMemo(
+    () =>
+      ['#b46b58', '#cf9b62', '#8f704d', '#a4515c', '#d0ad72'].map(
+        (color) => new THREE.Color(color),
+      ),
+    [],
+  );
   useEffect(() => () => geom.dispose(), [geom]);
+  useEffect(() => {
+    if (!ref.current) return;
+    for (let i = 0; i < count; i++)
+      ref.current.setColorAt(i, palette[i % palette.length]);
+    if (ref.current.instanceColor) ref.current.instanceColor.needsUpdate = true;
+  }, [count, palette]);
   useFrame(({ clock }) => {
     if (!ref.current) return;
     if (motion.chapter === 'history' || motion.chapter === 'collection') {

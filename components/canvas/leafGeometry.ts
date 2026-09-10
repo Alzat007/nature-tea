@@ -14,8 +14,8 @@ export function createLeafGeometry() {
         Math.sin(t * Math.PI) * 0.011 * (j === 1 ? 1 : -0.35),
         t * 0.29 - 0.145,
       );
-      const c = new THREE.Color(j === 1 ? '#8a9c51' : '#52632d');
-      c.multiplyScalar(0.7 + t * 0.3);
+      const c = new THREE.Color(j === 1 ? '#efd3a4' : '#b58c62');
+      c.multiplyScalar(0.72 + t * 0.28);
       cols.push(c.r, c.g, c.b);
     }
   }

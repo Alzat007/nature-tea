@@ -13,19 +13,21 @@ export function RitualScene({
   return (
     <section id="ritual" className="ritual story-section">
       <div className="section-marker">
-        <span>01</span> {t('THE RITUAL')}
+        <span>01</span> {t('TEA & HOSPITALITY')}
       </div>
       <div className="ritual-copy">
-        <p className="eyebrow">{t('A MOMENT, JUST FOR YOU')}</p>
+        <p className="eyebrow">{t('A CUP THAT BRINGS PEOPLE TOGETHER')}</p>
         <h2>
-          {t('A ritual.')}
+          {t('More than a drink.')}
           <br />
-          <em>{t('Not a routine.')}</em>
+          <em>{t('A way of welcome.')}</em>
         </h2>
         <p className="body-copy">
-          {t('A gentle twist. A little warmth.')}
+          {t('“A day may pass without food, but not without tea.”')}
           <br />
-          {t('Some things ask only that we slow down.')}
+          {t(
+            'In Hotan, the saying lives through meals, visits and conversation.',
+          )}
         </p>
         <button
           className="line-button"
@@ -47,23 +49,23 @@ export function LeafScene() {
   return (
     <section id="leaf" className="leaf-section story-section">
       <div className="section-marker">
-        <span>02</span> {t('THE LEAF')}
+        <span>02</span> {t('THE BOTANICALS')}
       </div>
       <div className="leaf-copy">
-        <p className="eyebrow">{t('A WORLD INSIDE')}</p>
+        <p className="eyebrow">{t('MORE THAN THIRTY INGREDIENTS')}</p>
         <h2>
-          {t('FROM LEAF')}
+          {t('NOT TEA LEAVES')}
           <br />
-          <em>{t('TO CUP.')}</em>
+          <em>{t('BUT A LIVING FORMULA.')}</em>
         </h2>
         <p className="body-copy">
-          {t('Every leaf carries a place.')}
+          {t('Clove, rose, ginger and cardamom meet in one cup.')}
           <br />
-          {t('Every cup brings you a little closer.')}
+          {t('The blend changes with the seasons.')}
         </p>
         <div className="tea-dossier">
           <div>
-            <span>{t('THE TEA')}</span>
+            <span>{t('THE HERITAGE TEA')}</span>
             <strong>{t(tea.name)}</strong>
             <i>{language === 'zh' ? tea.name : tea.chinese}</i>
           </div>
@@ -73,12 +75,12 @@ export function LeafScene() {
               <dd>{t(tea.origin)}</dd>
             </div>
             <div>
-              <dt>{t('ALTITUDE')}</dt>
-              <dd>{t(tea.altitude)}</dd>
+              <dt>{t('HERITAGE')}</dt>
+              <dd>{t(tea.heritage)}</dd>
             </div>
             <div>
-              <dt>{t('HARVEST')}</dt>
-              <dd>{t(tea.harvest)}</dd>
+              <dt>{t('INGREDIENTS')}</dt>
+              <dd>{t(tea.ingredients)}</dd>
             </div>
             <div>
               <dt>{t('CRAFT')}</dt>

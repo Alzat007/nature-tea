@@ -115,6 +115,13 @@ p {
 .hero-title span {
   white-space: nowrap;
 }
+html:lang(en) .hero-title {
+  font-size: clamp(68px, 7.6vw, 126px);
+  gap: 6vw;
+}
+html:lang(en) :is(.ritual-copy h2, .leaf-copy h2, .collection-heading h2) {
+  font-size: clamp(48px, 4.5vw, 72px);
+}
 .hero-topline {
   top: 24%;
   left: 5vw;
@@ -576,6 +583,14 @@ p {
   color: #acb69c;
   max-width: 285px;
 }
+.collection-disclaimer {
+  max-width: 520px;
+  margin: 42px 0 0 auto;
+  color: #9fa98f;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: right;
+}
 .product-dialog {
   width: 100vw !important;
   max-width: none !important;
@@ -999,6 +1014,15 @@ p {
     justify-content: space-between;
     opacity: 0.95;
   }
+  html:lang(en) .hero-title {
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 13vw;
+    gap: 0;
+  }
+  html:lang(en) :is(.ritual-copy h2, .leaf-copy h2, .collection-heading h2) {
+    font-size: 42px;
+  }
   .hero-topline {
     top: 18%;
     left: 6vw;
@@ -1256,6 +1280,12 @@ p {
   .product-description {
     font-size: 10px;
     line-height: 1.85;
+  }
+  .collection-disclaimer {
+    max-width: none;
+    margin-top: 28px;
+    font-size: 12px;
+    text-align: left;
   }
   .product-dialog {
     grid-template-columns: 1fr !important;

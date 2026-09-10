@@ -13,16 +13,16 @@ export default function HeroScene({
 
   return (
     <section id="home" className="hero story-section">
-      <p className="hero-topline">{t('A QUIETER KIND OF EXTRAORDINARY')}</p>
-      <span className="hero-index">{t('OBJECT 01 / THE TEA VESSEL')}</span>
-      <h1 className="hero-title" aria-label={t('A CUP OF TEA')}>
-        <span>{t('A CUP')}</span>
-        <span>{t('OF TEA')}</span>
+      <p className="hero-topline">{t('KNOWN AS “CHAY” IN UYGHUR')}</p>
+      <span className="hero-index">{t('NATIONAL ICH CRAFT / HOTAN')}</span>
+      <h1 className="hero-title" aria-label={t('UYGHUR MEDICINAL TEA')}>
+        <span>{t('UYGHUR')}</span>
+        <span>{t('HERBAL TEA')}</span>
       </h1>
       <div className="hero-bottom">
         <div>
-          <h2>{t('Shaped by time.')}</h2>
-          <p>{t('FROM THE EARTH. FOR THE EVERYDAY.')}</p>
+          <h2>{t('Nine centuries, one living cup.')}</h2>
+          <p>{t('FROM XINJIANG. SHARED EVERY DAY.')}</p>
         </div>
         <button
           className={`open-button ${hovered ? 'is-hovered' : ''}`}

@@ -8,9 +8,9 @@ export default function WhyTeaScene({ active }: { active: number }) {
     <section id="why" className="why-section story-section">
       <div className="why-stage pinned-stage">
         <div className="section-marker">
-          <span>03</span> {t('THE REASON')}
+          <span>03</span> {t('THE KNOWLEDGE')}
         </div>
-        <p className="eyebrow why-kicker">{t('WHY THIS TEA?')}</p>
+        <p className="eyebrow why-kicker">{t('WHAT MAKES IT DISTINCT?')}</p>
         <div className="why-panels">
           {reasons.map((r, i) => (
             <article
@@ -44,7 +44,7 @@ export function AdvantagesScene({ active }: { active: number }) {
     <section id="craft" className="craft-section story-section">
       <div className="craft-stage pinned-stage">
         <div className="section-marker">
-          <span>04</span> {t('FIVE THINGS, ONE EXPERIENCE')}
+          <span>04</span> {t('FIVE STEPS, ONE LIVING CRAFT')}
         </div>
         <div className="craft-panels">
           {advantages.map((a, i) => (
