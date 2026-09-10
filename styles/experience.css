@@ -1490,9 +1490,14 @@ html:lang(zh-CN) .wordmark {
 .wordmark.pare-wordmark,
 html:lang(zh-CN) .wordmark.pare-wordmark {
   font-family: 'Songti SC', 'Noto Serif CJK SC', 'STSong', serif;
-  letter-spacing: 0.22em;
+  font-size: clamp(34px, 3.2vw, 46px);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #f2deb4;
+  text-shadow: 0 2px 14px #00000066;
 }
 .wordmark.pare-wordmark span {
+  font-weight: 400;
   letter-spacing: 0.12em;
   line-height: 1.5;
 }
