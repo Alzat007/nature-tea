@@ -17,7 +17,7 @@ import {
   type Chapter,
   type DebugConfig,
 } from '@/models/config';
-import type { Product } from '@/data/tea';
+import { brand, type Product } from '@/data/tea';
 const World = dynamic(() => import('../canvas/World'), { ssr: false });
 const DebugPanel = dynamic(() => import('./DebugPanel'), { ssr: false });
 export default function Experience() {
@@ -120,11 +120,12 @@ export default function Experience() {
       </div>
       <header className="site-header">
         <a
-          className="wordmark"
+          className="wordmark pare-wordmark"
           href="#home"
-          aria-label={t('NATURE Uyghur Medicinal Tea, return to beginning')}
+          aria-label={t('帕热, return to beginning')}
         >
-          NATURE<span>{t('UYGHUR MEDICINAL TEA')}</span>
+          {brand.name}
+          <span>{t('UYGHUR MEDICINAL TEA')}</span>
         </a>
         <nav aria-label={t('Main navigation')}>
           <a href="#ritual">{t('TEA & HOSPITALITY')}</a>
@@ -162,8 +163,9 @@ export default function Experience() {
         <HistoryScene active={history} finale={finale} />
       </main>
       <footer className="site-footer">
-        <a href="#home" className="wordmark">
-          NATURE<span>{t('UYGHUR MEDICINAL TEA')}</span>
+        <a href="#home" className="wordmark pare-wordmark">
+          {brand.name}
+          <span>{t('UYGHUR MEDICINAL TEA')}</span>
         </a>
         <p>
           {t('AN EXPLORATION OF UYGHUR MEDICINAL TEA, CRAFT & CULTURE.')}

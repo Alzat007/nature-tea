@@ -61,7 +61,7 @@ export default function HistoryScene({
           className={`history-finale ${finale ? 'active' : ''}`}
           aria-hidden={!finale}
         >
-          <p className="eyebrow">{t('UYGHUR MEDICINAL TEA')}</p>
+          <p className="eyebrow">帕热 · {t('UYGHUR MEDICINAL TEA')}</p>
           <h2>
             {t('KNOWLEDGE')}
             <br />

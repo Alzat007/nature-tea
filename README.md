@@ -1,4 +1,4 @@
-# NATURE · 维吾尔药茶
+# 帕热 · 维吾尔药茶
 
 以金属茶杯为中心的双语 3D 文化体验，讲述维吾尔医药（和田药茶制作技艺）的原料、时令配方、制作方法、待客文化和非遗传承。Next.js、React、TypeScript、Three.js、React Three Fiber、Drei、GSAP ScrollTrigger、Tailwind CSS；详情弹窗采用 shadcn / Base UI。
 

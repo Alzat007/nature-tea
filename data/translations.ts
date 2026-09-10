@@ -160,8 +160,7 @@ export const zh: Record<string, string> = {
   'Skip to the story': '跳至正文',
   'Main navigation': '主导航',
   'Experience chapters': '体验章节',
-  'NATURE Uyghur Medicinal Tea, return to beginning':
-    'NATURE 维吾尔药茶，返回开篇',
+  '帕热, return to beginning': '帕热，返回开篇',
   'Interactive metallic tea vessel. Use the Open button or click its lid.':
     '交互式金属茶器。点击开启按钮或杯盖即可打开。',
   NOW: '此刻',

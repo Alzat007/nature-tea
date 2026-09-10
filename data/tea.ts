@@ -1,8 +1,8 @@
 const heritageSource = 'https://www.ihchina.cn/project_details/23858.html';
 
 export const brand = {
-  name: 'NATURE',
-  chinese: '维吾尔药茶',
+  name: '帕热',
+  chinese: '帕热',
   tagline: 'Nine centuries of living knowledge.',
 };
 

@@ -1487,6 +1487,15 @@ html:lang(zh-CN) {
 html:lang(zh-CN) .wordmark {
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
+.wordmark.pare-wordmark,
+html:lang(zh-CN) .wordmark.pare-wordmark {
+  font-family: 'Songti SC', 'Noto Serif CJK SC', 'STSong', serif;
+  letter-spacing: 0.22em;
+}
+.wordmark.pare-wordmark span {
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
 html:lang(zh-CN) :is(h1, h2, h3) {
   font-weight: 400;
   letter-spacing: 0.035em;

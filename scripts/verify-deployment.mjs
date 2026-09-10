@@ -11,6 +11,7 @@ async function get(path) {
 }
 
 const hasCurrentHomepage = (html) =>
+  html.includes('帕热') &&
   html.includes('维吾尔药茶') &&
   html.includes('Hotan Medicinal Tea') &&
   html.includes('中文') &&
