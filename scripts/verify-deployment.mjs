@@ -4,21 +4,40 @@ async function get(path) {
   const response = await fetch(url, {
     signal: AbortSignal.timeout(20000),
     cache: 'no-store',
+    headers: { 'cache-control': 'no-cache' },
   });
   if (!response.ok) throw new Error(`${url.pathname}: HTTP ${response.status}`);
   return response;
 }
-const home = await get('./');
-const html = await home.text();
-if (
-  !html.includes('维吾尔药茶') ||
-  !html.includes('Hotan Medicinal Tea') ||
-  !html.includes('中文') ||
-  !html.includes('EN')
-)
+
+const hasCurrentHomepage = (html) =>
+  html.includes('维吾尔药茶') &&
+  html.includes('Hotan Medicinal Tea') &&
+  html.includes('中文') &&
+  html.includes('EN');
+
+async function getCurrentHomepage() {
+  let lastError;
+  for (let attempt = 1; attempt <= 7; attempt++) {
+    try {
+      const home = await get(`./?deployment-check=${Date.now()}`);
+      const html = await home.text();
+      if (hasCurrentHomepage(html)) return html;
+      lastError = new Error('The production domain returned an older page.');
+    } catch (error) {
+      lastError = error;
+    }
+    if (attempt < 7) {
+      console.log(`Waiting for production propagation (${attempt}/6)…`);
+      await new Promise((resolve) => setTimeout(resolve, 10000));
+    }
+  }
   throw new Error(
-    'The bilingual Uyghur medicinal tea homepage was not returned.',
+    `The bilingual Uyghur medicinal tea homepage was not returned: ${lastError instanceof Error ? lastError.message : 'unknown error'}`,
   );
+}
+
+const html = await getCurrentHomepage();
 const assets = [
   ...new Set(
     [...html.matchAll(/(?:src|href)="([^"]*\/_next\/[^"?#]+)[^"]*"/g)].map(
