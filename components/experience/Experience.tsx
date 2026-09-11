@@ -125,7 +125,7 @@ export default function Experience() {
           aria-label={t('帕热, return to beginning')}
         >
           {brand.name}
-          <span>{t('UYGHUR MEDICINAL TEA')}</span>
+          <span className="brand-series">{t('NATURE UNIVERSE')}</span>
         </a>
         <nav aria-label={t('Main navigation')}>
           <a href="#ritual">{t('TEA & HOSPITALITY')}</a>
@@ -165,7 +165,7 @@ export default function Experience() {
       <footer className="site-footer">
         <a href="#home" className="wordmark pare-wordmark">
           {brand.name}
-          <span>{t('UYGHUR MEDICINAL TEA')}</span>
+          <span className="brand-series">{t('NATURE UNIVERSE')}</span>
         </a>
         <p>
           {t('AN EXPLORATION OF UYGHUR MEDICINAL TEA, CRAFT & CULTURE.')}

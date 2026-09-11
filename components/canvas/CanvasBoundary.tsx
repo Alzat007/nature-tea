@@ -11,7 +11,7 @@ export default class CanvasBoundary extends Component<
   render() {
     return this.state.error ? (
       <output className="canvas-fallback">
-        <p>HOTAN MEDICINAL TEA · 和田药茶</p>
+        <p>UYGHUR MEDICINAL TEA · 传统药茶</p>
         <small>
           3D is unavailable in this browser.
           <br />

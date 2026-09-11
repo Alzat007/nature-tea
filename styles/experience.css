@@ -1501,6 +1501,54 @@ html:lang(zh-CN) .wordmark.pare-wordmark {
   letter-spacing: 0.12em;
   line-height: 1.5;
 }
+.wordmark.pare-wordmark .brand-series {
+  margin-top: 12px;
+  padding-top: 9px;
+  padding-left: 0;
+  border-top: 1px solid #f2deb44d;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  color: #e0d4bc;
+}
+.hero-title.nature-title {
+  color: #eee7d8;
+  text-shadow: 0 4px 36px #10130f30;
+}
+html:lang(en) .hero-title.nature-title {
+  font-size: clamp(58px, 7.3vw, 126px);
+  gap: 3vw;
+}
+.hero-topline,
+.hero-index {
+  font-size: 14px;
+  color: #d1c8b5;
+}
+.hero-bottom p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #cfc4af;
+}
+@media (max-width: 760px) {
+  .wordmark.pare-wordmark .brand-series {
+    font-size: 12px;
+    margin-top: 8px;
+    padding-top: 7px;
+    letter-spacing: 0.12em;
+  }
+  .hero-topline {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+  .hero-bottom p {
+    font-size: 12px;
+    max-width: 225px;
+    letter-spacing: 0.06em;
+  }
+  html:lang(en) .hero-title.nature-title {
+    font-size: 13vw;
+    gap: 4px;
+  }
+}
 html:lang(zh-CN) :is(h1, h2, h3) {
   font-weight: 400;
   letter-spacing: 0.035em;

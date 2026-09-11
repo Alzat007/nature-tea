@@ -26,7 +26,7 @@ export function RitualScene({
           {t('“A day may pass without food, but not without tea.”')}
           <br />
           {t(
-            'In Hotan, the saying lives through meals, visits and conversation.',
+            'In Xinjiang, the saying lives through meals, visits and conversation.',
           )}
         </p>
         <button

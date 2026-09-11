@@ -7,9 +7,9 @@ export const brand = {
 };
 
 export const tea = {
-  name: 'Hotan Medicinal Tea',
-  chinese: '和田药茶',
-  origin: 'Hotan, Xinjiang',
+  name: 'Uyghur Medicinal Tea',
+  chinese: '传统药茶',
+  origin: 'Xinjiang',
   heritage: 'National ICH extension project · 2021',
   ingredients: '30+ food-and-medicine botanicals',
   processing: 'Selected. Ground. Blended. Infused.',
@@ -20,8 +20,8 @@ export const reasons = [
     id: 'heritage',
     title: 'HERITAGE',
     headline: 'Nine centuries in every cup.',
-    copy: 'Official heritage records trace Hotan medicinal tea back about 900 years, carrying Uyghur medical knowledge into everyday life.',
-    detail: 'ABOUT 900 YEARS · HOTAN',
+    copy: 'Official heritage records trace traditional medicinal tea back about 900 years, carrying Uyghur medical knowledge into everyday life.',
+    detail: 'ABOUT 900 YEARS · TRADITION',
   },
   {
     id: 'formula',
@@ -41,7 +41,7 @@ export const reasons = [
     id: 'hospitality',
     title: 'HOSPITALITY',
     headline: 'Hospitality, poured.',
-    copy: 'In Hotan, tea accompanies meals, visits and conversation. Serving it to guests turns a daily drink into a shared cultural practice.',
+    copy: 'In Xinjiang, tea accompanies meals, visits and conversation. Serving it to guests turns a daily drink into a shared cultural practice.',
     detail: 'MEALS · GUESTS · CONVERSATION',
   },
 ];
@@ -108,7 +108,7 @@ export const products: Product[] = [
       'Fennel, long pepper, black pepper, galangal and ginger form a deep, warming aromatic profile.',
     color: '#a67a5b',
     gradient: '#54382e',
-    origin: 'Hotan, Xinjiang',
+    origin: 'Xinjiang',
     notes: 'Fennel · Ginger · Black pepper',
     ritual:
       'Use 5–6 grams and infuse with boiling water for 3–5 minutes before drinking.',
@@ -123,7 +123,7 @@ export const products: Product[] = [
       'Clove, cardamom, citrus peel, goji, rose and cinnamon create a bright, floral-spiced cup.',
     color: '#c2a08b',
     gradient: '#4d3939',
-    origin: 'Hotan, Xinjiang',
+    origin: 'Xinjiang',
     notes: 'Clove · Rose · Cardamom',
     ritual:
       'Use 5–6 grams and infuse with boiling water for 3–5 minutes before drinking.',
@@ -138,7 +138,7 @@ export const products: Product[] = [
       'Traditional formulas can be selected for the season and the individual with qualified guidance.',
     color: '#958370',
     gradient: '#403836',
-    origin: 'Hotan, Xinjiang',
+    origin: 'Xinjiang',
     notes: 'Season · Individual · Guidance',
     ritual:
       'Medicinal formulations should be selected with guidance from a qualified practitioner.',
@@ -151,7 +151,7 @@ export const milestones = [
     year: '900',
     title: 'A tradition takes root.',
     story:
-      'For about nine centuries, Hotan medicinal tea has been prepared and shared across southern Xinjiang.',
+      'For about nine centuries, traditional medicinal tea has been prepared and shared across southern Xinjiang.',
     source: heritageSource,
     sourceLabel: 'China Intangible Cultural Heritage',
   },
@@ -175,7 +175,7 @@ export const milestones = [
     year: '2021',
     title: 'Recognized as national heritage.',
     story:
-      'Uyghur medicine (Hotan medicinal tea preparation techniques) enters China’s fifth national list as an extension project.',
+      'A related medicinal tea preparation tradition enters China’s fifth national list as an extension project.',
     source: heritageSource,
     sourceLabel: 'China Intangible Cultural Heritage',
   },

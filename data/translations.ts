@@ -1,7 +1,14 @@
 export const zh: Record<string, string> = {
+  'NATURE UNIVERSE': '自然宇宙',
+  'PARE · NATURE UNIVERSE': '帕热 · 自然宇宙',
+  'PARE / UYGHUR MEDICINAL TEA': '帕热 / 维吾尔药茶',
+  NATURE: '自然',
+  UNIVERSE: '宇宙',
+  'A universe in a cup.': '一盏草木，自有天地。',
+  'PARE. BOTANICALS, SEASONS & EVERYDAY RITUALS.': '帕热 · 草木入盏，四季入常。',
   'UYGHUR MEDICINAL TEA': '维吾尔药茶',
   'KNOWN AS “CHAY” IN UYGHUR': '维吾尔语称“恰依”',
-  'NATIONAL ICH CRAFT / HOTAN': '国家级非遗技艺 / 和田',
+  'BOTANICALS / XINJIANG': '草木香气 / 新疆',
   UYGHUR: '维吾尔',
   'MEDICINAL TEA': '药茶',
   'HERBAL TEA': '药茶',
@@ -23,8 +30,8 @@ export const zh: Record<string, string> = {
   'A way of welcome.': '更是一份待客之礼。',
   '“A day may pass without food, but not without tea.”':
     '“宁可一日无食，不可一日无茶。”',
-  'In Hotan, the saying lives through meals, visits and conversation.':
-    '在和田，这句话就活在三餐、相聚与交谈之中。',
+  'In Xinjiang, the saying lives through meals, visits and conversation.':
+    '在新疆，这句话就活在三餐、相聚与交谈之中。',
   'CLOSE THE VESSEL': '合上茶器',
   'TWIST TO DISCOVER': '旋开，发现',
   'TOUCH THE LID. LET THE MOMENT OPEN.': '轻触杯盖，让草木香气缓缓展开。',
@@ -39,8 +46,8 @@ export const zh: Record<string, string> = {
   ORIGIN: '源地',
   INGREDIENTS: '原料',
   CRAFT: '工艺',
-  'Hotan Medicinal Tea': '和田药茶',
-  'Hotan, Xinjiang': '新疆 · 和田',
+  'Uyghur Medicinal Tea': '传统药茶',
+  'Xinjiang': '新疆',
   'National ICH extension project · 2021': '国家级非遗名录扩展项目 · 2021',
   '30+ food-and-medicine botanicals': '30余种药食同源植物',
   'Selected. Ground. Blended. Infused.': '择料、研磨、配伍、冲泡。',
@@ -50,9 +57,9 @@ export const zh: Record<string, string> = {
   BOTANICALS: '草木',
   HOSPITALITY: '待客',
   'Nine centuries in every cup.': '一盏之间，约九百年。',
-  'Official heritage records trace Hotan medicinal tea back about 900 years, carrying Uyghur medical knowledge into everyday life.':
-    '国家非遗资料记载，和田药茶已有约九百年历史，将维吾尔医药智慧带入一代代人的日常生活。',
-  'ABOUT 900 YEARS · HOTAN': '约九百年 · 和田',
+  'Official heritage records trace traditional medicinal tea back about 900 years, carrying Uyghur medical knowledge into everyday life.':
+    '国家非遗资料记载，传统药茶已有约九百年历史，将维吾尔医药智慧带入一代代人的日常生活。',
+  'ABOUT 900 YEARS · TRADITION': '约九百年 · 传统',
   'More than a tea leaf.': '虽名为茶，不用茶叶。',
   'Traditional tea leaves are not used. More than twenty formulas combine food-and-medicine botanicals and change with the seasons.':
     '它不用传统茶叶，二十多种配方以药食同源植物配伍，并随季节变化。',
@@ -62,8 +69,8 @@ export const zh: Record<string, string> = {
     '丁香、小豆蔻、肉桂、生姜、玫瑰、枸杞与陈皮等，共同构成三十余种常用原料。',
   'CLOVE · ROSE · CARDAMOM · GINGER': '丁香 · 玫瑰 · 小豆蔻 · 生姜',
   'Hospitality, poured.': '以茶待客，以茶会友。',
-  'In Hotan, tea accompanies meals, visits and conversation. Serving it to guests turns a daily drink into a shared cultural practice.':
-    '在和田，药茶伴随三餐、相聚与交谈。以茶待客，让日常饮品成为共享的文化习俗。',
+  'In Xinjiang, tea accompanies meals, visits and conversation. Serving it to guests turns a daily drink into a shared cultural practice.':
+    '在新疆，药茶伴随三餐、相聚与交谈。以茶待客，让日常饮品成为共享的文化习俗。',
   'MEALS · GUESTS · CONVERSATION': '三餐 · 待客 · 相聚',
   'FIVE STEPS, ONE LIVING CRAFT': '五道工序，一门活态技艺',
   SELECT: '择',
@@ -130,9 +137,9 @@ export const zh: Record<string, string> = {
     '约九百年，多代传承，一门活着的技艺。',
   'Time carries it.': '岁月承载，',
   'Each generation keeps it alive.': '代代相传。',
-  'A tradition takes root.': '一门传统，在和田扎根。',
-  'For about nine centuries, Hotan medicinal tea has been prepared and shared across southern Xinjiang.':
-    '约九百年来，和田药茶在新疆南部被制作、饮用与分享。',
+  'A tradition takes root.': '一门传统，在新疆扎根。',
+  'For about nine centuries, traditional medicinal tea has been prepared and shared across southern Xinjiang.':
+    '约九百年来，传统药茶在新疆南部被制作、饮用与分享。',
   'Knowledge travels hand to hand.': '知识，在一双双手中传递。',
   'Family transmission remains central; documented lineages extend through at least three generations of folk Uyghur medicine practitioners.':
     '家族传承始终居于核心，相关传承谱系至少延续三代，多由民间维吾尔医药师承续。',
@@ -140,8 +147,8 @@ export const zh: Record<string, string> = {
   'More than twenty formulas draw from over thirty botanicals, with combinations changing across seasons.':
     '二十多种配方取材于三十余种草木，组合随季节变化。',
   'Recognized as national heritage.': '列入国家级非遗名录。',
-  'Uyghur medicine (Hotan medicinal tea preparation techniques) enters China’s fifth national list as an extension project.':
-    '“维吾尔医药（和田药茶制作技艺）”列入第五批国家级非物质文化遗产代表性项目名录扩展项目。',
+  'A related medicinal tea preparation tradition enters China’s fifth national list as an extension project.':
+    '相关药茶制作技艺列入第五批国家级非物质文化遗产代表性项目名录扩展项目。',
   'A living inheritance.': '活在日常里的传承。',
   'The tradition continues at family tables and in the hands of practitioners—part medicine, part food culture and part hospitality.':
     '这门传统仍在家庭餐桌与传承人手中延续，连接着医药、饮食与待客文化。',

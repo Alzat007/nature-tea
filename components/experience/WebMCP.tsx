@@ -31,7 +31,7 @@ export default function WebMCP({
     const tools: Tool[] = [
       {
         name: 'set_vessel_open',
-        description: 'Open or close the visible Hotan medicinal tea vessel.',
+        description: 'Open or close the visible traditional medicinal tea vessel.',
         inputSchema: {
           type: 'object',
           properties: { open: { type: 'boolean' } },
@@ -73,7 +73,7 @@ export default function WebMCP({
       {
         name: 'navigate_tea_chapter',
         description:
-          'Move to a named chapter of the Hotan medicinal tea story.',
+          'Move to a named chapter of the traditional medicinal tea story.',
         inputSchema: {
           type: 'object',
           properties: { chapter: { type: 'string', enum: chapterIds } },
