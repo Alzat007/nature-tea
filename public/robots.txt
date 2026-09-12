@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nature-tea.pages.dev/sitemap.xml
